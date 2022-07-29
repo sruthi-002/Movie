@@ -35,7 +35,19 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Movie m = new Movie("Casino Royale ", "Eon Productions","PG-13");
+        Movie m = new Movie("Casino Royale ", "Eon Productions","PG");
+        Movie h = new Movie("Sruthi","Camera");
+        Scanner in =new Scanner(System.in);
+        int n,i;
+        n = in.nextInt();
+        Movie [] arr = new Movie[n];
+        for(i=0;i<n;i++)
+        {
+            arr[i]=new Movie(in.next(),in.next(),in.next());
+        }
+        Movie [] a = new Movie[arr.length];
+        a = m.getPG(arr);
+        System.out.println(a);
 
     }
 }
