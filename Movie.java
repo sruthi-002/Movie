@@ -36,7 +36,7 @@ public class Main {
 
     public static void main(String[] args) {
         Movie m = new Movie("Casino Royale ", "Eon Productions","PG");
-        Movie h = new Movie("Sruthi","Camera");
+        Movie h = new Movie("Sruthi","Camera Productions");
         Scanner in =new Scanner(System.in);
         int n,i;
         n = in.nextInt();
